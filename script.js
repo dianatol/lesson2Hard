@@ -1,14 +1,16 @@
-let num = 266219;
-let result = 1;
-num = num.toString().split("").map(Number)
+let lang = 'ru'
 
-for (let i = 0; i < num.length; i++) {
-    result *= num[i];
+if (lang === 'ru') {
+    console.log("Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье")
 }
 
-console.log(result)
+else if (lang === 'en') {
+    console.log("Monday, tuesday, wednesday, thursday, friday, saturday, sunday")
+} else {
+    console.log("Неккоретный выбор языка")
+}
 
-result = result**3
+let namePerson = "Александр";
 
-result = result.toString()
-console.log(result.substring(0,2))
+namePerson === "Артем" ? console.log("Директор") : namePerson === "Александр" ? console.log("Преподаватель") : console.log("Студент");
+
