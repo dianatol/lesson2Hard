@@ -1,16 +1,12 @@
-let lang = 'ru'
-
-if (lang === 'ru') {
-    console.log("Понедельник, вторник, среда, четверг, пятница, суббота, воскресенье")
+'use strict'
+function myFunc(arg) {
+    if (typeof arg !== 'string') {
+        return "Введите строку"
+    }
+    if(arg.length > 30) {
+        return arg.slice(0, 30) + '...';
+}
+    return arg;
 }
 
-else if (lang === 'en') {
-    console.log("Monday, tuesday, wednesday, thursday, friday, saturday, sunday")
-} else {
-    console.log("Неккоретный выбор языка")
-}
-
-let namePerson = "Александр";
-
-namePerson === "Артем" ? console.log("Директор") : namePerson === "Александр" ? console.log("Преподаватель") : console.log("Студент");
-
+console.log(myFunc('452525443'))
